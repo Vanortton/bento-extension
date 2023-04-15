@@ -1,0 +1,12 @@
+{
+    "name": "Bento 🏡: Sua nova guia mais bonita",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Esta extensão substitui a nova guia padrão pelo Bento.",
+    "chrome_url_overrides": {
+        "newtab": "./src/index.html"
+    },
+    "icons": {
+        "16": "./src/favicon.png"
+    }
+}

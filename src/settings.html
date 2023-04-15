@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/settings.css">
+    <script src="./assets/js/icons.js"></script>
+</head>
+
+<body>
+    <a id="backToNewTab">
+        <button id="settings">
+            <i id="settingsIcon" icon-name="home"></i>
+        </button>
+    </a>
+    <button id="themeButton">
+        <i id="themeIcon" icon-name="moon"></i>
+    </button>
+    <div class="alert">Alerta</div>
+    <main class="main">
+        <h1>Configurações</h1>
+        <br>
+        <hr>
+        <form class="settings" action="">
+            <div class="nome">
+                <h3>Nome</h3>
+                <input type="text" name="name" placeholder="Digite seu nome" />
+            </div>
+            <hr />
+            <div class="imageBackground">
+                <h3>Imagem de fundo</h3>
+                <label for="imageBackgroundtrue"><input type="radio" name="imageBackground" id="imageBackgroundtrue"
+                        value="true" /> Sim</label>
+                <label for="imageBackgroundfalse"><input type="radio" name="imageBackground" id="imageBackgroundfalse"
+                        value="false" /> Não</label>
+                <label for="uploadImageBackground" id="labelUploadBackground">Carregar Imagem</label>
+                <input type="file" accept="image/png, image/jpeg, image/jpg" id="uploadImageBackground">
+            </div>
+            <hr />
+            <div class="openInNewTab">
+                <h3>Abrir links em uma nova guia</h3>
+                <label for="openInNewTabtrue"><input type="radio" name="openInNewTab" id="openInNewTabtrue"
+                        value="true" /> Sim</label>
+                <label for="openInNewTabfalse"><input type="radio" name="openInNewTab" id="openInNewTabfalse"
+                        value="false" /> Não</label>
+            </div>
+            <hr />
+            <div class="twelveHourFormat">
+                <h3>Hora em formato de 12h</h3>
+                <label for="twelveHourFormattrue"><input type="radio" name="twelveHourFormat" id="twelveHourFormattrue"
+                        value="true" /> Sim</label>
+                <label for="twelveHourFormatfalse"><input type="radio" name="twelveHourFormat"
+                        id="twelveHourFormatfalse" value="false" /> Não</label>
+            </div>
+            <hr />
+            <div class="layout">
+                <h3>Layout</h3>
+                <label for="bentoLayoutbento"><input type="radio" name="bentoLayout" id="bentoLayoutbento"
+                        value="bento" /> Bento</label>
+                <label for="bentoLayoutlists"><input type="radio" name="bentoLayout" id="bentoLayoutlists"
+                        value="lists" /> Lists</label>
+                <label for="bentoLayoutbuttons"><input type="radio" name="bentoLayout" id="bentoLayoutbuttons"
+                        value="buttons" /> Buttons</label>
+            </div>
+            <hr />
+            <div class="waterIcons">
+                <h3>Tema dos ícones do tempo</h3>
+                <label for="weatherIconsOneDark"><input type="radio" name="weatherIcons" id="weatherIconsOneDark"
+                        value="OneDark" /> OneDark (padrão)</label>
+                <label for="weatherIconsNord"><input type="radio" name="weatherIcons" id="weatherIconsNord"
+                        value="Nord" /> Nord</label>
+                <label for="weatherIconsDark"><input type="radio" name="weatherIcons" id="weatherIconsDark"
+                        value="Dark" /> Dark</label>
+                <label for="weatherIconsWhite"><input type="radio" name="weatherIcons" id="weatherIconsWhite"
+                        value="White" /> White</label>
+            </div>
+            <hr />
+            <div class="changeThemeByHour">
+                <h3>Mudar tema pela hora</h3>
+                <label for="changeThemeByHourfalse"><input type="radio" name="changeThemeByHour"
+                        id="changeThemeByHourfalse" value="false" /> Não</label>
+                <label for="changeThemeByHourtrue"><input type="radio" name="changeThemeByHour"
+                        id="changeThemeByHourtrue" value="true" /> Sim</label>
+                <label for="hourDarkThemeInactive">A partir de <input type="time" name="hourDarkThemeInactive"
+                        id="hourDarkThemeInactive claro" /> exiba no tema claro.</label>
+                <label for="hourDarkThemeActive">A partir de <input type="time" name="hourDarkThemeActive"
+                        id="hourDarkThemeActive escuro" /> exiba no tema escuro.</label>
+            </div>
+            <hr />
+            <div class="changeThemeByOS">
+                <h3>Mudar tema a partir das preferencias do sistema</h3>
+                <label for="changeThemeByOStrue"><input type="radio" name="changeThemeByOS" id="changeThemeByOStrue"
+                        value="true" /> Sim</label>
+                <label for="changeThemeByOSfalse"><input type="radio" name="changeThemeByOS" id="changeThemeByOSfalse"
+                        value="false" /> Não</label>
+            </div>
+            <hr />
+            <div class="autoChangeTheme">
+                <h3>Mudar tema automaticamente <span style="color: #8b8b8b; font-size: .8em">(a partir da hora ou das
+                        preferencias do navegador)</span></h3>
+                <label for="autoChangeThemetrue"><input type="radio" name="autoChangeTheme" id="autoChangeThemetrue"
+                        value="true" /> Sim</label>
+                <label for="autoChangeThemefalse"><input type="radio" name="autoChangeTheme" id="autoChangeThemefalse"
+                        value="false" /> Não</label>
+            </div>
+            <div class="devOption">
+                <h3>Opções do desenvolvedor</h3>
+                <p style="color: #8b8b8b; font-size: .9em">Os ícones que aparecem nessa aplicação são do Lucide,
+                    essa opção permite que você escolha o ícone do link quando você editá-lo.<br />ATENÇÃO: O NOME DOS
+                    ÍCONES LUCIDE SÃO EM INGLÊS!</p>
+                <label for="devOptionTrue"><input type="radio" name="devOption" id="devOptionTrue" value="true" />
+                    Ativar</label>
+                <label for="devOptionFalse"><input type="radio" name="devOption" id="devOptionFalse" value="false" />
+                    Desativar</label>
+            </div>
+            <div class="buttons">
+                <button btn-salvar type="submit">Salvar</button>
+                <button><a href="./index.html">Cancelar</a></button>
+            </div>
+            <hr>
+            <div class="dangerZone">
+                <h3>Zona de risco</h3>
+                <button format-data type="button">
+                    <strong>Apagar todos os dados</strong>
+                </button>
+                <button format-buttons type="button">
+                    <strong>Restaurar os botões como de origem</strong>
+                </button>
+            </div>
+            <hr>
+            <div class="homePage">
+                <h3>Defina o Bento como Página Inicial e página de nova guia</h3>
+                <a
+                    href="https://support.microsoft.com/pt-br/microsoft-edge/altere-a-home-page-do-seu-navegador-a531e1b8-ed54-d057-0262-cc5983a065c6">Defina
+                    como a página inicial do seu navegador</a>
+                <ul>
+                    <li>Se você usar o Firefox: <a
+                            href="https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search"
+                            rel="nofollow">Custom New Tab Page</a> e certifique-se de ativar "Forçar links para abrir no
+                        quadro superior (experimental)" na página de preferências da extensão.</li>
+                    <li>Se você usar Chromium (Brave, Vivaldi, Chrome): <a
+                            href="https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia">Custom
+                            New Tab Url</a></li>
+                </ul>
+
+            </div>
+        </form>
+    </main>
+    <footer>
+        Criado por <a href="https://github.com/migueravila/">Miguel Ávila</a>
+        e melhorado por <a href="https://github.com/Vanortton">Vanorton</a>
+    </footer>
+    <script src="config.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
