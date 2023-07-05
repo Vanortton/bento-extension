@@ -17,10 +17,10 @@ function openCloseForm(action) {
             top: 150,
             behavior: 'smooth'
         }) 
-        form.style.scale = '1'
+        form.style.transform = 'translate(-50%, -50%) scale(1)'
     } else if (action === 'close') {
         document.body.style.overflow = 'auto'
-        form.style.scale = '0'
+        form.style.transform = 'translate(-50%, -50%) scale(0)'
     } else {
         throw new Error('Invalid action')
     }

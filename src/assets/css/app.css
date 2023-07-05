@@ -15,8 +15,8 @@ body {
     --input-bg: #e4e6e6;
 
     --imgbg: url(./background.jpg);
-    --imgcol: linear-gradient(rgba(255, 255, 255, 0.7),
-            rgba(255, 255, 255, 0.7));
+    --imgcol: linear-gradient(rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.6));
 }
 
 .darktheme {
@@ -27,8 +27,8 @@ body {
 
     --fg: #d8dee9;
 
-    --imgcol: linear-gradient(rgba(0, 0, 0, 0.85),
-            rgba(0, 0, 0, 0.85));
+    --imgcol: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6));
 }
 
 * {
@@ -342,8 +342,7 @@ button:active {
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.40);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    scale: 0;
+    transform: translate(-50%, -50%) scale(0);
     display: grid;
     justify-items: center;
     align-items: center;
